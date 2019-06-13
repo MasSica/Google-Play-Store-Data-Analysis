@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cross-Sectional Analysis</title>
+    <script src="https://oop.polito.it/js/plotly-latest.min.js"></script>
+    <script src="https://oop.polito.it/js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+    <script src="main_sg.js"></script>
+    <script src="thirdPage.js"></script>
+    <script src="../lodash.js"></script> <!-- lo dash-->
+
+ <link rel="stylesheet" type="text/css" href="../style/stylePage.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
+    <style >
+
+
+        td.Paragraph{
+            margin-top: 0px;
+            font-size: large;
+            text-align: left;
+            font-family: 'Roboto Slab', serif !important;
+            padding-left: 20px;
+            padding-right: 80px;
+
+
+
+        }
+
+        td.Graph{
+            width: 40%;
+
+            padding-left: 0px;
+            padding-right: 0px;
+
+        }
+        table{
+             margin-left: 0px;
+            margin-right: 100px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            border-style: none;
+        }
+
+
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> -
+
+</head>
+<body>
+<header>
+    <div><h1 ><a id ='title' href="../firstPage/index.html">Google play store data</a></h1></div>
+</header>
+
+<article class="front-page">
+<h2 class="text" style="font-size: x-large"><em>Cross-Sectional Analysis</em></h2>
+<div  style="overflow-x:auto;" id="Rating-Size"></div>
+<h2 class="text"><em>Rating vs Size Analysis</em> </h2>
+<p class="Paragraf">
+    The scatterplot below shows that developers, while an app is being updated, can approach the task in two different ways:
+    First it involves a connection between increased rating and supply improvement, on the
+    other hand it is about reducing system storage size in order to optimize it. </p>
+    <section style="overflow-x:auto;">
+<table cellspacing=0> <tr>
+    <td class="Graph"> <div id="Download-Size" ></div> </td>
+<td class="Paragraph">
+    <h2 class="text" style="margin-right: 0px;margin-left: 0px"><em>Download vs Size Analysis</em> </h2>
+
+    If you look at this bar chart, you will notice how the most-downloaded App Store applications are in the range of 60-80 megabytes
+    in terms of app file size. The analysis which gives us these figures is influenced by Facebook and YouTube, two applications with more than 1 billion downloads: there is a correlation between app file
+    size and downloads (apps with a large number of downloads tend to be large in file size, too).
+    On the left, where there is the ratings range, the range 80-100 megabytes stands out with an average rating a
+    little higher than 4.0</td>
+</tr>
+</table>
+    </section>
+<h3 class="text" ><em>Rating vs Version Analysis</em> </h3>
+<p class="Paragraf">
+    Let’s now turn to this graph and we can see how apps with more than 100 million downloads rank from 4 to 4.5,
+    considering that the tenth versions of these applications have not been released yet. We can also see that
+    small applications, probably because of the few ratings, have been given either very high or very low ratings.</p>
+
+<div style="overflow-x:auto;" id="rating-version" ></div>
+
+
+<h4 class="text"><em>Version vs Download Analysis</em> </h4>
+<p class="Paragraf">This scatterplot highlights that applications with the average number of downloads (10-100M) have already
+        released the tenth version. </p>
+<div style="overflow-x:auto;" id="download-version"></div>
+
+
+<form style=" overflow: hidden">
+    <input class="button"  type="button" value="Home" onclick="window.location.href='../firstPage/index.html'" />
+    <input class="button" type="button" value="Back" onclick="window.location.href='../secondPage/index_ms.html'" />
+</form>
+    </article>
+</body>
+</html>

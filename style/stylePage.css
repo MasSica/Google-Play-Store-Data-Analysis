@@ -1,0 +1,165 @@
+#csv tr:nth-child(even) {background: WhiteSmoke}
+#csv tr:nth-child(odd) {background: #FFF}
+table, th, td {
+    padding: 15px;
+    text-align: center;
+    table-layout: auto;
+    margin: auto;
+    position: relative;
+
+}
+
+table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 2px solid whitesmoke;
+    padding-left:0;
+    padding-right: 0;
+    width: 100%;
+}
+tr{
+    padding: 10px 0 10px 0;
+}
+
+input{
+    padding: 4px;
+    border-radius: 3px;
+    background-color: white;
+    text-align: center;
+    width: 3%;
+    margin-left: 3px;
+    border-width: 1px;
+    border-style:solid;
+    border-color: lightgray;
+}
+
+body{
+    margin:0 !important;
+    font-family: 'Roboto Slab', serif !important;
+    background-color: whitesmoke;
+
+}
+
+.front-page {
+    object-fit: fill;
+    background-color: white;
+    padding: 10px;
+    margin: 30px auto;
+    position: relative;
+    border-radius: 3px;
+    max-width: 90%;
+}
+
+#title, #title:visited ,#title:hover,#title:after{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+
+            
+.buttonGraph{
+    background-color: #6897b1;
+    border: solid;
+    border-radius: 9px;
+    color: white;
+    width: 100px;
+    padding: 10px 1px 10px 1px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 8%;
+}
+
+.buttonGraph:hover{
+    transition-duration: 0.4s;
+    background-color:#365769;
+
+}
+
+
+.button{
+    background-color: #6897b1;
+    border: solid;
+    border-radius: 9px;
+    color: white;
+    width: 100px;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 16px;
+    display:inline-block;
+    line-height: 20px;
+    float:right;
+
+}
+.button:hover{
+    transition-duration: 0.4s;
+    background-color:#365769;
+
+}
+header {
+    box-shadow: -1px 2px 9px -5px rgba(0,0,0,0.71);
+    background: #365769;
+    padding: 2px 1px 8px 1px;
+    text-align: center;
+    position: sticky;
+    height: 40px;
+    color: #fff;
+    z-index: 1;
+    top:0;
+    text-justify: distribute;
+
+}
+p, h2, h3, h4{
+    margin: 30px 100px 30px 100px;
+    font-size: large;
+}
+
+header h1 {
+    margin: auto;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.boxp{
+    height: 60%;
+    width: 100% !important;
+}
+ .image{
+     margin: 0 auto;
+     width:700px;
+     overflow: auto;
+ }
+
+ label{
+     margin: 30px 10px 30px 100px;
+     font-size: x-large;
+ }
+ #rating_hist{
+     display: flex;
+     justify-content: center;
+     margin: 0 auto;
+     width:700px;
+     left:50%;
+
+
+ }
+
+.imagems{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    overflow: auto;
+}
+
+
+ .text{
+     padding-left: 5px;
+ }

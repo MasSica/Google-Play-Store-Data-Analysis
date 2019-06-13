@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ratings Task </title>
+    <script src="https://oop.polito.it/js/plotly-latest.min.js"></script>
+    <script src="https://oop.polito.it/js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+    <script src="main_ms.js"></script>
+
+    <script src="../lodash.js"></script> <!-- lo dash-->
+    <script src="ratingsTasks.js"></script>
+    <link rel="stylesheet" type="text/css" href="../style/stylePage.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+<header>
+    <div><h1 ><a id ='title' href="../firstPage/index.html">Google play store data</a></h1></div>
+</header>
+
+<article class="front-page">
+    <h2 class="text"><em><strong>Rating Analysis</strong></em> </h2>
+
+    <h3 class="text"><em>Rating vs Reviews Analysis</em> </h3>
+    <p class="text">
+
+        By analyzing the relationship between ratings and reviews it is immediate to notice that the most extreme rating values, like 5 or 1 are based
+        on a very small amount of reviews. What is of striking evidence at a first glance is that the highest number of reviews are related to ratings around 4.5. We can also notice
+        the that the applications that require some kind of subscription or payment have a smaller amount of reviews and  have mainly positive ratings.
+    </p>
+
+    <button class="buttonGraph" id="show_rating">Show Graph</button>
+    <section class="imagems" id="rating"></section>
+
+    <h3 class="text"><em>Rating vs Downloads Analysis</em></h3>
+    <p>
+        The analysis of this graphs leads us to the understanding of the relationship between ratings and downloads. The objective of this visualization is to understand whether or not
+        people are interested in the rating of applications when it comes to choose which to download. As expected we can state with some accuracy that free apps are installed a lot more than
+        paid app and that the rating strongly influences the decision of downloading. The curious aspect is that , as in the previous graph, we have a peak of installs around 4.5, and then  we start
+        decreasing again. Paid apps follow a similar trend with less installs.
+    </p>
+
+    <button class="buttonGraph" id="show_inst">Show Graph</button>
+    <section class="imagems" id="installs"></section>
+
+
+    <h3 class="text"><em>Rating vs Size Analysis</em></h3>
+    <p class="text">
+        The analysis of this graphs leads us to the understanding of the relationship between ratings and size. The objective of this visualization is to understand whether or not
+        heavy apps have better ratings than light apps. This graph shows with striking evidence that the number of free apps is higher than the number of paid apps. It is also evident how
+        heavy paid apps have high ratings.
+
+    </p>
+
+    <button class="buttonGraph" id="show_size">Show Graph</button>
+    <section class="imagems" id="size"></section>
+
+
+    <h3 class="text"><em>Rating vs Price Analysis</em></h3>
+    <p class="text">
+        The analysis of this graphs leads us to the understanding of the relationship between ratings and price. By computing a mean for each rating range it is clear that
+        the most expensive apps have a rating between 3.5 and 4. Such result is interesting since we would expect top rated apps to have the highest price.
+
+    </p>
+
+    <button class="buttonGraph" id="show_price">Show Graph</button>
+    <section  class="imagems" id="price"></section>
+    <form style=" overflow: hidden">
+        <input class="button" type="button" value="Next" onclick="window.location.href='../thirdPage/index_sg.html'" />
+        <input class="button" type="button" value="Back" onclick="window.location.href='../firstPage/index.html'" />
+    </form>
+
+
+
+</article>
+</body>
+</html>

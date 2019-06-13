@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Play store data</title>
+    <script src="https://oop.polito.it/js/plotly-latest.min.js"></script>
+    <script src="https://oop.polito.it/js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+    <script src="main.js"></script>
+    <script src="categoriesTasks.js"></script>
+    <script src="../lodash.js"></script> <!-- lo dash-->
+    <link rel="stylesheet" type="text/css" href="../style/stylePage.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<header>
+        <div><h1 ><a id ='title' href="#">Google play store data</a></h1></div>
+</header>
+
+<article class="front-page">
+
+<article id="b">
+    <p> This is a report based on  <a href="https://www.kaggle.com/lava18/google-play-store-apps">Kaggle</a> dataset about Google play store application.
+    The dataset contained <em>NaN</em>, <em>missing values</em> or <em>invalid strings</em>, therefore we had to clean it first by using Python libraries such as Pandas and Numpy (View <a href="dataPreprocessing.html">notebook</a>).<br>
+    It is possible to see a sample below.
+    </p>
+    <label for="data">Number of rows:</label><input id="data" type="number" min="1" max="50" value="10" /></label>
+    <section style="overflow-x: auto;" id = "csv"></section>
+</article>
+
+<article id = 'intro'>
+    <p>First we looked at the distribution of ratings: most of the users rate an application between 4.3 and 4.5. Furthermore, it is noticeable how an user who enjoy an app tend to rate it directly with 5 instead of picking up a more thoughtful rate. </p>
+    <div  class='image' id="rating_hist"></div>
+</article>
+
+
+<article id = 'categories'>
+    <h3><em>Categories Analysis</em></h3>
+    <p>We can dive into our data to gain more interesting information by looking at the mean of some features grouped by category <br>
+    First, by using a boxplot, we can show how ratings are distributed among categories:  </p>
+    <section class="image boxp" id="box-plot"></section>
+    <p><strong>Health and Fitness </strong> and <strong> Events</strong> are the categories with the highest median value (the best developed). On the other hand, <em>Dating</em> is the category with the lowest median value. It might probably demonstrate that these apps are not developed as good as the applications belonging to the former categories.</p>
+    <p> We can now use bar charts to show how different features ( i.e. number of download, size of the app, app prices, and number of reviews)  are distributed among categories. </p>
+</article>
+
+    <section style="overflow-x:auto;">
+    <table id="tab-categories">
+        <tr><td><section id="reviews_mean"></section></td><td><section id="installs_mean"></section></td></tr>
+        <tr><td><section id="prices_mean"></section></td><td><section id="sizeMega_mean"></section></td></tr>
+    </table>
+    </section>
+    <p>These graphs show that games are predominant in the Google Play store. Although they have on average a big size, they still are the apps downloaded the most and, as expected, with the highest number of reviews.
+        By looking at the <em>Categories Vs Price</em> bar chart, we can notice that <em>Finance</em> and <em>Lifestyle</em> applications are the most expensive. Hence, they do not have a big number of downloads and reviews.</p>
+
+
+<div id="rating"></div>
+
+<div id="download-reviews"></div>
+
+    <form style=" overflow: hidden">
+        <input class="button" type="button" value="next" onclick="window.location.href='../secondPage/index_ms.html'" />
+    </form>
+</article>
+
+
+</body>
+</html>
